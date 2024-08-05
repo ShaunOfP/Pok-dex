@@ -1,0 +1,151 @@
+#pokedex {
+    min-height: 50vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.ion-arrow{
+    margin-top: 15px;
+    height: 40px;
+    width: 40px;
+}
+
+#pokemonName{
+    margin-top: 15px;
+}
+
+.pokemon-id{
+    margin-top: 15px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.pokemon-info-type-styling {
+    text-align: center;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    font-weight: bold;
+    font-size: small;
+    width: 60px;
+}
+
+.info-container {
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 100px;
+    margin-top: -40px;
+    min-height: 100px;
+}
+
+.pokemon-image {
+    display: flex;
+    justify-content: center;
+    margin-top: -200px;
+}
+
+.pokemon-image img {
+    height: 200px;
+    width: 200px;
+}
+
+.info-container-header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info-container-header a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    margin-top: 10px;
+}
+
+.info-container-header a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.render-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.render-info-overall{
+    display: flex;
+}
+
+.render-info-measures{
+    width: 90px;
+}
+
+.render-info-title{
+    color: rgb(90, 90, 90);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.render-info-data{
+    margin-left: 90px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.render-info-second-headline{
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.render-info-second-container{
+    display: flex;
+}
+
+.render-evolution-info{
+    display: flex;
+}
+
+.evolve-frame{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin-right: 10px;
+}
+
+.evolve-frame:hover{
+    cursor: pointer;
+}
+
+.evolution-box-text{
+    text-align: center;
+}
+
+.c-black{
+    color: black;
+}
+
+.m-left{
+    margin-left: 10%;
+}
+
+@media(max-width: 414px) {
+    .info-container-header a{
+        font-size: larger;
+        margin-top: 20px;
+    }
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="pokedex-script.js"></script>
+    <script src="pokeinfo-script.js"></script>
+    <link rel="stylesheet" href="pokeinfo-style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="pokedex-style.css">
+    <title>Pokedex with API</title>
+</head>
+
+<body id="body" onload="initMain()">
+    <h1 id="main-headline">Pokedex</h1>
+
+    <div id="pokedexContainer" class="dp-none">
+        <div>
+            <div id="pokedex">
+                <ion-icon class="ion-arrow" onclick="showPokedex()" name="arrow-back-outline"></ion-icon>
+                <div>
+                    <h1 class="txt-center" id="pokemonName"></h1>
+                    <div class="pokemonType" id="pokemonType"></div>
+                </div>
+                <div>
+                    <div class="pokemon-id" id="pokemonId"></div>
+                </div>
+            </div>
+
+            <div class="pokemon-image">
+                <img id="pokemonInfoImage">
+            </div>
+        </div>
+
+        <div class="info-container">
+            <div class="info-container-header">
+                <a href="javascript:renderAboutInfo()">About</a>
+                <a href="javascript:renderBaseStatsInfo()">Base Stats</a>
+                <a href="javascript:renderEvolutionInfo()">Evolution</a>
+                <a href="javascript:renderMovesInfo()">Moves</a>
+            </div>
+        </div>
+        
+        <div id="pokeinfo-details"></div>
+    </div>
+
+    <div class="pokemon-container" id="pokemonContainer"></div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
